@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: 'RobotoCondensed-Thin';
+    src: local('RobotoCondensed-Thin'), 
+}
+
+*{
+    font-family: 'RobotoCondensed-Thin';
+    
+}
+body{
+    font-family: 'RobotoCondensed-Thin';
+}
+.pg{
+    font-size: 50px;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 25px;
+    text-align: center;
+}
+.subtitle2{
+    font-size: 18px;
+    text-align: center;
+}
+.subtitle3{
+    font-size: 18px;
+    text-align:  left;
+}
+.paragraph{
+    font-size: 12px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:white;
+    text-align: left;
+}
+
+a:hover{
+    color:#48d336;
+    text-decoration: none;
+}
+ 
+#MainMenu{visibility: Hidden;}
+footer {visibility: Hidden;}
+header {visibility: Hidden;} 
