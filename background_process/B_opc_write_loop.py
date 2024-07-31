@@ -5,6 +5,9 @@ url = "opc.tcp://127.0.0.1:1234"
 #url = "opc.tcp://localhost:62548/SampleServer"
 #nodeId = "ns=2;i=2"
 
+
+### hahahahahah####
+
 client = Client(url)
 client.connect()
 root = client.get_root_node()
