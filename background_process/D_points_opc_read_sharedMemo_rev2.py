@@ -12,6 +12,9 @@ import random
 """
 testing line
 """
+"""
+"Testing2"
+"""
 
 # function to sort the contours (from left to right only! and top to bottom too!)
 def sort_contours(contours):
