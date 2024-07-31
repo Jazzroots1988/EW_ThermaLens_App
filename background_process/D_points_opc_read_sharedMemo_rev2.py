@@ -9,6 +9,10 @@ import pyodbc
 from multiprocessing import shared_memory
 import random
 
+"""
+testing line
+"""
+
 # function to sort the contours (from left to right only! and top to bottom too!)
 def sort_contours(contours):
     if len(contours) < 2:
