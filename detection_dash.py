@@ -10,7 +10,7 @@ st.write("")
 
 
 # connection string
-conn_string = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=DESKTOP-EVG8NJP;'
+conn_string = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=localhost\SQLEXPRESS;'
                                                                           r'DATABASE=EW_testing'
                                                                           r';Trusted_Connection=yes;')
 
@@ -42,6 +42,6 @@ with column_time_date_cell[3]:
 # column_image = st.columns(3)
 # with column_image[1]:
 st.write("")
-image = Image.open('G:/Mi unidad/Streamlit//image_test_reg/Detection_2024-07-16 16_17_37.png')
+image = Image.open('image_test_reg/Detection_2024-07-16 16_17_37.png')
 st.image(image, caption='Detection_2024-07-09 12_13_46', width=800)
     
