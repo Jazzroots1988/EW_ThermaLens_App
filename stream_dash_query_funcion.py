@@ -35,7 +35,7 @@ def dash_query(date_ini, date_end, cell, time_ini, time_end, width=width, height
 
     shared_image_annot = np.ndarray((height, width, 3), dtype=np.uint8, buffer=image_detections.buf)
 
-    ew_db = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=DESKTOP-EVG8NJP;'
+    ew_db = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=localhost\SQLEXPRESS;'
                                                                           r'DATABASE=EW_testing'
                                                                           r';Trusted_Connection=yes;')
     ew_cursor = ew_db.cursor()
@@ -82,7 +82,7 @@ def dash_query(date_ini, date_end, cell, time_ini, time_end, width=width, height
 def buffer_dataRT():
     last_data = np.ndarray((1,100), dtype=np.float32, buffer=buffer_data.buf)
 
-    ew_db = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=DESKTOP-EVG8NJP;'
+    ew_db = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=localhost\SQLEXPRESS;'
                                                                         r'DATABASE=EW_testing'
                                                                         r';Trusted_Connection=yes;')
     ew_cursor = ew_db.cursor()

@@ -57,7 +57,7 @@ operator_dash  = st.Page(
 
 testing2  = st.Page(
     page="testing2.py",
-    title="Predictions",
+    title="Forecasting",
     icon=":material/sweep:",
 )
 

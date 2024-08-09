@@ -8,6 +8,7 @@ from client_opc_simple import OpcRead
 import pyodbc
 from multiprocessing import shared_memory
 import random
+import pymodbus.client
 
 """
 testing line
@@ -125,7 +126,7 @@ if __name__ == '__main__':
     #puntos_revisados = {}
 
     # connection string for database communication
-    ew_db = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=DESKTOP-EVG8NJP;'
+    ew_db = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=localhost\SQLEXPRESS;'
                                                                           r'DATABASE=EW_testing'
                                                                           r';Trusted_Connection=yes;')
     flag = 0

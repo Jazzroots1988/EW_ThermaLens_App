@@ -14,8 +14,6 @@ conn_string = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERV
                                                                           r'DATABASE=EW_testing'
                                                                           r';Trusted_Connection=yes;')
 
-"8==D es una prueba"
-# Patricio
 
 # Columns and sql cursor setting
 list_columns = ['ult_detect_date', 'ult_detect_time', 'celda', 'zona']
@@ -24,7 +22,7 @@ db_cursor = conn_string.cursor()
 
 # query and data retrieval
 for comm in list_columns:
-    command_sql = f'select distinct {comm} from EW_points_test;'
+    command_sql = f'select distinct {comm} from EW_points_test_rev3;'
     db_cursor.execute(command_sql)
     result = db_cursor.fetchall()
     result = [str(element[0]) for element in result]

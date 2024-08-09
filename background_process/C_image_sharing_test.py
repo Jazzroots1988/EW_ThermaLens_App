@@ -28,7 +28,7 @@ def visualization_lines(frame):
 
 
 
-video = cv2.VideoCapture("F:/EW_proyecto/thermal_9_hours.mp4")
+video = cv2.VideoCapture("C:/Users/TH-Tech/Documents/python_projects/EW_seeker/EW_proyecto/thermal_9_hours.mp4")
 flag = 0
 
 

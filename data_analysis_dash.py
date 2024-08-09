@@ -7,7 +7,7 @@ import datetime
 st.markdown('<p class="title">Data Analysis</p>', unsafe_allow_html=True)
 
 # connection string
-conn_string = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=DESKTOP-EVG8NJP;'
+conn_string = pyodbc.connect(r'DRIVER={ODBC Driver 17 for SQL Server};' + r'SERVER=localhost\SQLEXPRESS;'
                                                                           r'DATABASE=EW_testing'
                                                                           r';Trusted_Connection=yes;')
 
@@ -20,7 +20,7 @@ db_cursor = conn_string.cursor()
 
 # query and data retrieval
 for comm in list_columns:
-    command_sql = f'select distinct {comm} from EW_points_test_rev1;'
+    command_sql = f'select distinct {comm} from EW_points_test_rev3;'
     db_cursor.execute(command_sql)
     result = db_cursor.fetchall()
     result = [str(element[0]) for element in result]
